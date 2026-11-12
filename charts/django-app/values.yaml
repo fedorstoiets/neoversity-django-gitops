@@ -2,7 +2,7 @@ nameOverride: ""
 fullnameOverride: ""
 image:
   repository: "227281812993.dkr.ecr.us-east-2.amazonaws.com/lesson-7-django" # Updated by Jenkins
-  tag: "lesson-7"
+  tag: fea9e0c3973a
   pullPolicy: IfNotPresent
 replicaCount: 2
 service:
