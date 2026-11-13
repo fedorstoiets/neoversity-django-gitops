@@ -13,10 +13,10 @@ config:
   DJANGO_DEBUG: "0"
   DJANGO_ALLOWED_HOSTS: "*" # For temporary lab access; restrict for production.
   POSTGRES_DB: "neoversity_db"
-  POSTGRES_USER: "neoversity"
-  POSTGRES_HOST: "django-app-postgresql"
+  POSTGRES_USER: "dbadmin"
+  POSTGRES_HOST: "neoversity-final-db.cr60u4oi4vf1.us-east-2.rds.amazonaws.com"
   POSTGRES_PORT: "5432"
-secretName: django-app-secrets # must be created separately with kubectl
+secretName: "django-rds-secrets"
 resources:
   requests: { cpu: 100m, memory: 128Mi }
   limits: { cpu: 500m, memory: 512Mi }
